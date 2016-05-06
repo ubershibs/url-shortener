@@ -48,7 +48,7 @@ mongo.connect(dbUrl, function(err, db) {
           sites.insertOne({longUrl: url}, function(err, doc) {
             if (err) throw err;
             if (doc) {
-              shortUrl = generateShortUrl(doc.ops[0]._id);
+              shortUrl = generateShortUrl(doc.ops[0]._id, sites);
               res.json({ shortUrl: 'http://localhost:3000/' + shortUrl })
             }
           })
