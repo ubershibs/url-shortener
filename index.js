@@ -41,7 +41,7 @@ mongo.connect(dbUrl, function(err, db) {
           }
           //serve the short URL up
           res.json({
-            shortUrl: 'http://localhost:3000/' + shortUrl
+            shortUrl: 'https://gentle-brushlands-88674.herokuapp.com' + shortUrl
           })
         } else {
           //if it's not yet in the DB at all, add it, get the ID, and chop it
@@ -49,7 +49,7 @@ mongo.connect(dbUrl, function(err, db) {
             if (err) throw err;
             if (doc) {
               shortUrl = generateShortUrl(doc.ops[0]._id, sites);
-              res.json({ shortUrl: 'http://localhost:3000/' + shortUrl })
+              res.json({ shortUrl: 'https://gentle-brushlands-88674.herokuapp.com' + shortUrl })
             }
           })
         }
