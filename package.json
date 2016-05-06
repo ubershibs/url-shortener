@@ -1,0 +1,27 @@
+{
+  "name": "url-shortener",
+  "version": "0.0.1",
+  "description": "URL Shortening app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubershibs/url-shortener.git"
+  },
+  "keywords": [
+    "url-shortener"
+  ],
+  "author": "Luke Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ubershibs/url-shortener/issues"
+  },
+  "homepage": "https://github.com/ubershibs/url-shortener#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.18",
+vj    "valid-url": "^1.0.9"
+  }
+}
